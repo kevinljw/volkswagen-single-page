@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>The ID. family</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="js/lightbox.js"></script>
+  </head>
+
+  <body>
+    <div id="jumb">
+        <img src="img\img_cover2-14.png" alt="">
+        <div class="head_text">
+            The ID. family
+        </div>
+        <div class="content_text">
+            The new face of electric mobility that's going to shake up the way we drive.
+        </div>
+        <a href="https://www.volkswagen.co.uk/about-us/concept-cars/volkswagen-id" class="lm_btn" target="_new">Learn More</a>
+    </div>
+    <div class="right_menu">
+      
+       Videos
+        <div class="video-btn">
+            <img src="img\ID.png" onclick="lightbox_open('ID');" alt="">
+        </div>
+        <div class="video-btn">
+            <img src="img\CROZZ.png" onclick="lightbox_open('CROZZ');" alt="">
+        </div>
+        <div class="video-btn">
+            <img src="img\BUZZ.png" onclick="lightbox_open('BUZZ');" alt="">
+        </div>
+        <div class="video-btn">
+            <img src="img\VIZZON.png" onclick="lightbox_open('VIZZON');" alt="">
+        </div>
+    </div>
+    
+    
+    <div id="light">
+      <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+      <video id="VisaChipCardVideo" width="1080" controls>
+          <source src="video/ID.mp4" type="video/mp4">
+          <!--Browser does not support <video> tag -->
+        </video>
+        
+    </div>
+    
+    <div id="fade" onClick="lightbox_close();"></div>
+  </body>
+
+</html>
