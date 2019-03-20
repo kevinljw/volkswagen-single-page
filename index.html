@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>The ID. family</title>
     <link rel="stylesheet" href="/css/main.css">
-    <script src="js/lightbox.js"></script>
+    <script type="module" src="js/x-frame-bypass.js"></script>
+    
+    
   </head>
 
   <body>
@@ -17,7 +19,8 @@
         <div class="content_text">
             The new face of electric mobility that's going to shake up the way we drive.
         </div>
-        <a href="https://www.volkswagen.co.uk/about-us/concept-cars/volkswagen-id" class="lm_btn" target="_new">Learn More</a>
+        <a href="#" class="lm_btn" onclick="lightbox_browser_open();">Learn More</a>
+        
     </div>
     <div class="right_menu">
       
@@ -35,8 +38,10 @@
             <img src="img\VIZZON.png" onclick="lightbox_open('VIZZON');" alt="">
         </div>
     </div>
-    
-    
+    <div id="web-light">
+        
+        <a class="boxclose" id="boxclose-web" onclick="lightbox_close();"></a>
+    </div>
     <div id="light">
       <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
       <video id="VisaChipCardVideo" width="1080" controls>
@@ -47,6 +52,12 @@
     </div>
     
     <div id="fade" onClick="lightbox_close();"></div>
+    
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/lightbox.js"></script>
   </body>
 
 </html>
