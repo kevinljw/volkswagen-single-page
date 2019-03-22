@@ -36,16 +36,16 @@ body{
     line-height: 2em;
     border-radius: 10px;
     width: 10em;
-    top: 55%;
+    top: 55vh;
 }
 .head_text{
     font-size: 40px;
-    top: 42%;
+    top: 38vh;
     
 }
 .content_text{
-    width: 16%;
-    top: 48%;
+    width: 21em;
+    top: 47vh;
 }
 .right_menu{
     position: fixed;
