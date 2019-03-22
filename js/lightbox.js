@@ -8,9 +8,9 @@ window.document.onkeydown = function(e) {
 }
 var tmpWhichOne = "";
 
-//$(function(){
-//    $( '#web-light' ).prepend('<iframe is="x-frame-bypass" src="https://www.volkswagen.co.uk/about-us/concept-cars/volkswagen-id"></iframe>');
-//})
+$(function(){
+    $( '#web-light' ).prepend('<iframe is="x-frame-bypass" src="https://www.volkswagen.co.uk/about-us/concept-cars/volkswagen-id"></iframe>');
+})
 
 function lightbox_open(whichOne) {
   tmpWhichOne = whichOne;
@@ -28,8 +28,8 @@ function lightbox_close() {
   var lightBoxVideo = document.getElementById("VisaChipCardVideo");
   document.getElementById('light').style.display = 'none';
   document.getElementById('web-light').style.display = 'none';
-//  $( '#web-light>iframe' ).remove();
-//  $( '#web-light' ).prepend('<iframe is="x-frame-bypass" src="https://www.volkswagen.co.uk/about-us/concept-cars/volkswagen-id"></iframe>');
+  $( '#web-light>iframe' ).remove();
+  $( '#web-light' ).prepend('<iframe is="x-frame-bypass" src="https://www.volkswagen.co.uk/about-us/concept-cars/volkswagen-id"></iframe>');
   document.getElementById('fade').style.display = 'none';
   lightBoxVideo.pause();
 }
