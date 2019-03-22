@@ -2,6 +2,10 @@
   font-family: VWHead-Regular;
   src: url("../font/VWHead-Regular.otf") format("opentype");
 }
+@font-face {
+  font-family: VWText-Regular;
+  src: url("../font/VWText-Regular.otf") format("opentype");
+}
 body{
     font-family: "VWHead-Regular";
     background: url("../img/img_BG.png");
@@ -39,13 +43,15 @@ body{
     top: 55vh;
 }
 .head_text{
-    font-size: 40px;
-    top: 38vh;
+    font-size: 32px;
+    top: 40vh;
     
 }
 .content_text{
-    width: 21em;
+    width: 17em;
     top: 47vh;
+/*    font-size: 12px;*/
+    font-family: "VWText-Regular";
 }
 .right_menu{
     position: fixed;
